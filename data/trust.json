@@ -1,0 +1,55 @@
+{
+  "eyebrow": "Proven Excellence",
+  "title": "Built On Trust",
+  "subtitle": "Built through timeless craftsmanship and lasting client relationships.",
+  "columns": [
+    {
+      "type": "image-first",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+        "alt": "Minimalist Sunlit Interior with Linen Daybed and Olive Tree"
+      },
+      "stat": {
+        "number": "250+",
+        "label": "Project Completed",
+        "description": "Delivering thoughtfully designed spaces across industries."
+      }
+    },
+    {
+      "type": "stat-first",
+      "stat": {
+        "number": "15+",
+        "label": "Years of Experience",
+        "description": "Shaping timeless interiors with unmatched creative expertise."
+      },
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+        "alt": "Double-Height Contemporary Architectural Living Space"
+      }
+    },
+    {
+      "type": "image-first",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
+        "alt": "Travertine Kitchen Island with Architectural Downlighting"
+      },
+      "stat": {
+        "number": "98+",
+        "label": "Client Satisfaction",
+        "description": "Built on exceptional client trust and satisfaction."
+      }
+    },
+    {
+      "type": "stat-first",
+      "stat": {
+        "number": "12",
+        "label": "Design Awards",
+        "description": "Recognized for exceptional client satisfaction consistently."
+      },
+      "image": {
+        "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+        "alt": "Minimalist Panoramic Glazed Lounge View"
+      }
+    }
+  ]
+}

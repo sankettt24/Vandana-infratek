@@ -1,0 +1,26 @@
+[
+  {
+    "id": "service-01",
+    "num": "01 / ARCHITECTURE",
+    "title": "Interior Architecture & Planning",
+    "description": "Spatial reimagining, structural load calculations, daylight choreography, and comprehensive construction documentation."
+  },
+  {
+    "id": "service-02",
+    "num": "02 / JOINERY",
+    "title": "Bespoke Millwork & Cabinetry",
+    "description": "Concealed storage, acoustic paneling, and custom architectural woodwork crafted by European master cabinetmakers."
+  },
+  {
+    "id": "service-03",
+    "num": "03 / CURATION",
+    "title": "Material & Art Advisory",
+    "description": "Quarry-direct Italian marble selection, antique textiles, museum-grade lighting, and bespoke gallery installations."
+  },
+  {
+    "id": "service-04",
+    "num": "04 / DELIVERY",
+    "title": "Turnkey Project Direction",
+    "description": "White-glove project delivery, contractor management, and meticulous white-linen installation ready for immediate occupancy."
+  }
+]

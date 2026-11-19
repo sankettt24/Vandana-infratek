@@ -1,0 +1,42 @@
+[
+  {
+    "id": "project-01",
+    "title": "Villa Solaria",
+    "location": "Saint-Tropez, France",
+    "category": "Residential",
+    "year": "2025",
+    "scope": "Architecture & Furnishings",
+    "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+    "description": "Mediterranean clifftop villa balancing raw monolithic concrete with warm French limestone, walnut finishes, and bespoke minimalist furniture."
+  },
+  {
+    "id": "project-02",
+    "title": "The TriBeCa Loft",
+    "location": "New York, USA",
+    "category": "Penthouse",
+    "year": "2024",
+    "scope": "Spatial Reconfiguration & Millwork",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "description": "Industrial cast-iron architecture reinterpreted with acoustic micro-cement ceilings, concealed storage volumes, and imported travertine slabs."
+  },
+  {
+    "id": "project-03",
+    "title": "Casa Del Vento",
+    "location": "Lake Como, Italy",
+    "category": "Private Estate",
+    "year": "2024",
+    "scope": "Villa Restoration & Art Advisory",
+    "image": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80",
+    "description": "Complete restoration of a 1920s rationalist palazzo overlooking Lake Como, featuring restored frescoes juxtaposed with custom patinated brass fixtures."
+  },
+  {
+    "id": "project-04",
+    "title": "Aoyama Residence",
+    "location": "Tokyo, Japan",
+    "category": "Duplex Penthouse",
+    "year": "2023",
+    "scope": "Interior Architecture & Joinery",
+    "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+    "description": "Harmonizing Japanese Sukiya carpentry principles with European brutalist elements, hinoki timber screens, and fluted acoustic stone walls."
+  }
+]

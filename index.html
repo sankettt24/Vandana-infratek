@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANDANA INFRATEK — Architecture, Interiors & Execution</title>
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Modular Design System & Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+
+<body class="page-home">
+
+  <!-- Floating Modern Glass Header -->
+  <header class="glass-header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-mark"></span>
+        <span class="logo-text">VANDANA INFRATEK</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#trust" class="nav-link active">Excellence</a>
+        <a href="#about" class="nav-link">Studio</a>
+        <a href="#services" class="nav-link">Expertise</a>
+        <a href="#reels" class="nav-link">Reels</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="https://wa.me/9324608194?text=Hello%20Vandana%20Infratek,%20I%20would%20like%20to%20inquire%20about%20your%20interior%20and%20architectural%20services."
+          target="_blank" rel="noopener" class="cta-btn">
+          <span>Inquire</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Navigation Menu Toggle Button (Three Dots / Close) -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="menu-dots" aria-hidden="true">
+            <span class="menu-dot"></span>
+            <span class="menu-dot"></span>
+            <span class="menu-dot"></span>
+          </span>
+          <span class="menu-close-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Frosted Glass Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-nav-content">
+      <nav class="mobile-nav-menu">
+        <a href="#trust" class="mobile-nav-link">
+          <span>Excellence</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+        <a href="#about" class="mobile-nav-link">
+          <span>Studio Philosophy</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+        <a href="#services" class="mobile-nav-link">
+          <span>Core Disciplines</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+        <a href="#reels" class="mobile-nav-link">
+          <span>Instagram Reels</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a href="https://wa.me/9324608194?text=Hello%20Vandana%20Infratek,%20I%20would%20like%20to%20inquire%20about%20your%20interior%20and%20architectural%20services.%20Budget%20tumcha%20interior%20amcha!"
+          target="_blank" rel="noopener" class="mobile-nav-cta">
+          <span>Direct WhatsApp Consultation</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Fixed Background Canvas & Scrim Overlay -->
+  <canvas id="canvas"></canvas>
+  <div class="bg-overlay"></div>
+
+  <!-- Hero Section (Atelier 2-Column Split with Square Frosted Glass Box) -->
+  <section id="hero-section" class="hero-section">
+    <div class="hero-grid">
+      <!-- Left Column: Main Headline, Lead & CTAs -->
+      <div class="hero-main-col">
+        <div class="hero-tagline-badge">
+          <span class="pill-dot"></span>
+          <span class="pill-brand">ARCHITECTURAL INTERIORS &amp; EXECUTION</span>
+        </div>
+
+        <h1 class="hero-headline">
+          <span class="hero-brand-name">VANDANA INFRATEK</span>
+          <span class="hero-tagline-display">Budget tumcha interior amcha</span>
+        </h1>
+
+        <p class="hero-lead">
+          We craft thoughtfully designed spaces where architecture, materials, and everyday living come together within
+          your vision and budget.
+        </p>
+
+        <div class="hero-button-group">
+          <a href="#trust" class="btn-primary-accent">
+            <span>Explore Our Work</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#about" class="btn-glass-secondary">
+            <span>Our Approach</span>
+          </a>
+        </div>
+
+        <!-- Bottom Services Bar -->
+        <div class="hero-services-bar">
+          <span class="services-tag">OUR SERVICES</span>
+          <div class="services-list">
+            <span>Residential Interiors</span>
+            <span class="sep">/</span>
+            <span>Commercial Spaces</span>
+            <span class="sep">/</span>
+            <span>Hospitality Design</span>
+            <span class="sep">/</span>
+            <span>Architecture &amp; Styling</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Square Frosted Glass Box in Right Corner -->
+      <div class="hero-cards-col">
+        <div class="hero-feature-box">
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+            </div>
+            <span>15+ Years of Design Experience</span>
+          </div>
+
+          <div class="hero-feature-divider"></div>
+
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                <line x1="8" y1="6" x2="8" y2="6.01"></line>
+                <line x1="16" y1="6" x2="16" y2="6.01"></line>
+                <line x1="8" y1="10" x2="8" y2="10.01"></line>
+                <line x1="16" y1="10" x2="16" y2="10.01"></line>
+                <line x1="8" y1="14" x2="8" y2="14.01"></line>
+                <line x1="16" y1="14" x2="16" y2="14.01"></line>
+              </svg>
+            </div>
+            <span>Residential &amp; Commercial</span>
+          </div>
+
+          <div class="hero-feature-divider"></div>
+
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span>Bespoke Interior Solutions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll sequence hint -->
+    <div class="scroll-hint" id="scroll-hint">
+      <span class="scroll-dot"></span>
+      <span>Scroll down to play sequence</span>
+    </div>
+  </section>
+
+  <!-- Main Structured Website Content (Transparent Glass Overlay) -->
+  <div class="page-content">
+
+    <!-- Built On Trust — Symmetrical 4-Column Alternating Bento Grid -->
+    <section class="section trust-section" id="trust">
+      <div class="trust-header">
+        <div class="trust-badge">
+          <span class="trust-dot"></span>
+          <span>Proven Excellence</span>
+        </div>
+        <h2 class="trust-title">Built On Trust</h2>
+        <p class="trust-subtitle">Built through timeless craftsmanship and lasting client relationships.</p>
+      </div>
+
+      <div class="trust-grid">
+        <!-- Column 1: Image (Top) + Stat (Bottom) -->
+        <div class="trust-col">
+          <div class="trust-img-card">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+              alt="Minimalist Sunlit Interior with Linen Daybed and Olive Tree" loading="lazy">
+          </div>
+          <div class="trust-stat-card">
+            <div class="trust-stat-num">250+</div>
+            <div class="trust-stat-label">Project Completed</div>
+            <p class="trust-stat-desc">Delivering thoughtfully designed spaces across industries.</p>
+          </div>
+        </div>
+
+        <!-- Column 2: Stat (Top) + Image (Bottom) -->
+        <div class="trust-col">
+          <div class="trust-stat-card">
+            <div class="trust-stat-num">15+</div>
+            <div class="trust-stat-label">Years of Experience</div>
+            <p class="trust-stat-desc">Shaping timeless interiors with unmatched creative expertise.</p>
+          </div>
+          <div class="trust-img-card">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+              alt="Double-Height Contemporary Architectural Living Space" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Column 3: Image (Top) + Stat (Bottom) -->
+        <div class="trust-col">
+          <div class="trust-img-card">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
+              alt="Travertine Kitchen Island with Architectural Downlighting" loading="lazy">
+          </div>
+          <div class="trust-stat-card">
+            <div class="trust-stat-num">98+</div>
+            <div class="trust-stat-label">Client Satisfaction</div>
+            <p class="trust-stat-desc">Built on exceptional client trust and satisfaction.</p>
+          </div>
+        </div>
+
+        <!-- Column 4: Stat (Top) + Image (Bottom) -->
+        <div class="trust-col">
+          <div class="trust-stat-card">
+            <div class="trust-stat-num">12</div>
+            <div class="trust-stat-label">Design Awards</div>
+            <p class="trust-stat-desc">Recognized for exceptional client satisfaction consistently.</p>
+          </div>
+          <div class="trust-img-card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+              alt="Minimalist Panoramic Glazed Lounge View" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Philosophy & About Section -->
+    <section class="section" id="about">
+      <span class="section-eyebrow">[ STUDIO PHILOSOPHY ]</span>
+      <div class="manifesto-grid">
+        <blockquote class="manifesto-quote">
+          "Architecture begins when we place two bricks deliberately together. Interior design begins when that meeting
+          creates an atmosphere in which life feels dignified, serene, and timeless."
+        </blockquote>
+        <div class="manifesto-author">— Principal Atelier Statement • Vandana Infratek</div>
+      </div>
+    </section>
+
+    <!-- Capabilities & Services Section -->
+    <section class="section" id="services">
+      <span class="section-eyebrow">[ CORE DISCIPLINES ]</span>
+      <h2 class="section-title">Architectural & Interior Services</h2>
+      <p class="section-subtitle">From master spatial planning to the hand-carving of stone mantels, we provide
+        end-to-end realization for the world's most discerning patrons.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-num">01 / ARCHITECTURE</span>
+          <div>
+            <h3 class="service-title">Interior Architecture & Planning</h3>
+            <p class="service-desc">Spatial reimagining, structural load calculations, daylight choreography, and
+              comprehensive construction documentation.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">02 / JOINERY</span>
+          <div>
+            <h3 class="service-title">Bespoke Millwork & Cabinetry</h3>
+            <p class="service-desc">Concealed storage, acoustic paneling, and custom architectural woodwork crafted by
+              European master cabinetmakers.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">03 / CURATION</span>
+          <div>
+            <h3 class="service-title">Material & Art Advisory</h3>
+            <p class="service-desc">Quarry-direct Italian marble selection, antique textiles, museum-grade lighting, and
+              bespoke gallery installations.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">04 / DELIVERY</span>
+          <div>
+            <h3 class="service-title">Turnkey Project Direction</h3>
+            <p class="service-desc">White-glove project delivery, contractor management, and meticulous white-linen
+              installation ready for immediate occupancy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Reels Carousel Section -->
+    <section class="section" id="reels">
+      <div class="reels-header-bar">
+        <div>
+          <span class="section-eyebrow">[ INSTAGRAM REELS • @VANDANA_INFRATEK ]</span>
+          <h2 class="section-title">Site Execution & Interior Reels</h2>
+          <p class="section-subtitle" style="margin-bottom: 0;">Watch our latest project handovers, luxury residential
+            interior reveals, and live worksite craftsmanship.</p>
+        </div>
+
+        <div class="reels-controls">
+          <a href="https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj" target="_blank" rel="noopener"
+            class="insta-follow-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Follow @vandana_infratek</span>
+          </a>
+          <button class="reel-nav-btn" id="reelPrev" aria-label="Previous Reel">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="reel-nav-btn" id="reelNext" aria-label="Next Reel">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Reels Carousel Track -->
+      <div class="reels-carousel-container">
+        <div class="reels-track" id="reelsTrack">
+
+          <!-- Reel 1 -->
+          <a href="https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj" target="_blank" rel="noopener"
+            class="reel-card">
+            <div class="reel-media">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+                alt="Turnkey Villa Interior Handover" loading="lazy">
+            </div>
+            <div class="reel-scrim"></div>
+            <div class="reel-content">
+              <div class="reel-top">
+                <span class="reel-user-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  </svg>
+                  @vandana_infratek
+                </span>
+                <span class="reel-views-pill">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  84.2K
+                </span>
+              </div>
+              <div class="reel-play-indicator">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <div class="reel-bottom">
+                <p class="reel-caption">Complete luxury turnkey interior handover — ambient cove lighting, marble
+                  flooring, and fluted panelling.</p>
+                <span class="reel-sound">♫ Vandana Infratek • Original Audio</span>
+                <div class="reel-stats">
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                    </svg>
+                    5,420
+                  </span>
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                      </path>
+                    </svg>
+                    230
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Reel 2 -->
+          <a href="https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj" target="_blank" rel="noopener"
+            class="reel-card">
+            <div class="reel-media">
+              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
+                alt="Master suite walkthrough" loading="lazy">
+            </div>
+            <div class="reel-scrim"></div>
+            <div class="reel-content">
+              <div class="reel-top">
+                <span class="reel-user-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  </svg>
+                  @vandana_infratek
+                </span>
+                <span class="reel-views-pill">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  128K
+                </span>
+              </div>
+              <div class="reel-play-indicator">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <div class="reel-bottom">
+                <p class="reel-caption">Master bedroom suite walkthrough featuring bespoke charcoal fluted wall
+                  panelling and warm profile lighting.</p>
+                <span class="reel-sound">♫ Trending Interior Beats • Audio</span>
+                <div class="reel-stats">
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                    </svg>
+                    9,820
+                  </span>
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                      </path>
+                    </svg>
+                    512
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Reel 3 -->
+          <a href="https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj" target="_blank" rel="noopener"
+            class="reel-card">
+            <div class="reel-media">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80"
+                alt="Italian Marble Mirror Polishing" loading="lazy">
+            </div>
+            <div class="reel-scrim"></div>
+            <div class="reel-content">
+              <div class="reel-top">
+                <span class="reel-user-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  </svg>
+                  @vandana_infratek
+                </span>
+                <span class="reel-views-pill">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  62.4K
+                </span>
+              </div>
+              <div class="reel-play-indicator">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <div class="reel-bottom">
+                <p class="reel-caption">Live footage: Final diamond polishing and seamless bookmatching of imported
+                  Statuario marble slabs.</p>
+                <span class="reel-sound">♫ Infratek Craftsmanship Series</span>
+                <div class="reel-stats">
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                    </svg>
+                    4,190
+                  </span>
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                      </path>
+                    </svg>
+                    184
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Reel 4 -->
+          <a href="https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj" target="_blank" rel="noopener"
+            class="reel-card">
+            <div class="reel-media">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                alt="Concealed Bar & Paneling" loading="lazy">
+            </div>
+            <div class="reel-scrim"></div>
+            <div class="reel-content">
+              <div class="reel-top">
+                <span class="reel-user-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  </svg>
+                  @vandana_infratek
+                </span>
+                <span class="reel-views-pill">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  95.1K
+                </span>
+              </div>
+              <div class="reel-play-indicator">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <div class="reel-bottom">
+                <p class="reel-caption">Custom motorized bar joinery disappearing flush into dark oak acoustic slats.
+                  Engineered precision.</p>
+                <span class="reel-sound">♫ Architecture & Flow • Audio</span>
+                <div class="reel-stats">
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                    </svg>
+                    7,310
+                  </span>
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                      </path>
+                    </svg>
+                    349
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Reel 5 -->
+          <a href="https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj" target="_blank" rel="noopener"
+            class="reel-card">
+            <div class="reel-media">
+              <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80"
+                alt="Duplex Penthouse Living Reveal" loading="lazy">
+            </div>
+            <div class="reel-scrim"></div>
+            <div class="reel-content">
+              <div class="reel-top">
+                <span class="reel-user-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  </svg>
+                  @vandana_infratek
+                </span>
+                <span class="reel-views-pill">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  142K
+                </span>
+              </div>
+              <div class="reel-play-indicator">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <div class="reel-bottom">
+                <p class="reel-caption">Double-height living pavilion featuring suspended architectural chandelier and
+                  floor-to-ceiling glazing.</p>
+                <span class="reel-sound">♫ Luxury Living Reveal</span>
+                <div class="reel-stats">
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                    </svg>
+                    11.2K
+                  </span>
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                      </path>
+                    </svg>
+                    640
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Reel 6 -->
+          <a href="https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj" target="_blank" rel="noopener"
+            class="reel-card">
+            <div class="reel-media">
+              <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80"
+                alt="Minimalist Gourmet Kitchen" loading="lazy">
+            </div>
+            <div class="reel-scrim"></div>
+            <div class="reel-content">
+              <div class="reel-top">
+                <span class="reel-user-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  </svg>
+                  @vandana_infratek
+                </span>
+                <span class="reel-views-pill">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  77.8K
+                </span>
+              </div>
+              <div class="reel-play-indicator">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <div class="reel-bottom">
+                <p class="reel-caption">Full concealed island with integrated induction, touch-release pocket doors, and
+                  textured quartzite.</p>
+                <span class="reel-sound">♫ Vandana Kitchen Atelier</span>
+                <div class="reel-stats">
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                    </svg>
+                    6,150
+                  </span>
+                  <span class="reel-stat-item">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                      </path>
+                    </svg>
+                    290
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>© <span id="currentYear">2026</span> VANDANA INFRATEK. All rights reserved.</div>
+      <ul class="footer-links">
+        <li><a href="#trust">Excellence</a></li>
+        <li><a href="#about">Philosophy</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reels">Reels</a></li>
+        <li><a
+            href="https://wa.me/9324608194?text=Hello%20Vandana%20Infratek,%20I%20would%20like%20to%20inquire%20about%20your%20interior%20and%20architectural%20services."
+            target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj" target="_blank"
+            rel="noopener">Instagram @vandana_infratek</a></li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <!-- Floating WhatsApp & Instagram Dock (Bottom Right) -->
+  <div class="floating-social-dock" id="floatingSocialDock">
+    <a href="https://wa.me/9324608194?text=Hello%20Vandana%20Infratek,%20I%20would%20like%20to%20inquire%20about%20your%20interior%20and%20architectural%20services."
+      target="_blank" rel="noopener" class="floating-social-btn whatsapp-float" aria-label="Chat on WhatsApp">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="#ffffff" style="display:block;">
+        <path
+          d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.09-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.58.12.17 1.76 2.69 4.27 3.77.6.26 1.06.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.07-.1-.23-.17-.48-.29z" />
+      </svg>
+      <span class="floating-tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj" target="_blank" rel="noopener"
+      class="floating-social-btn insta-float" aria-label="Instagram @vandana_infratek">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round" style="display:block;">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+      <span class="floating-tooltip">@vandana_infratek</span>
+    </a>
+  </div>
+
+  <!-- Modular Scripts Architecture -->
+  <script src="js/scroll-animation.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/instagram-embed.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script src="js/components/project-gallery.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

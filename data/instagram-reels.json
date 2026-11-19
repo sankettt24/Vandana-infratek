@@ -1,0 +1,83 @@
+[
+  {
+    "id": "reel-01",
+    "title": "Spotlight Live Execution Reel",
+    "url": "https://www.instagram.com/vandana_infratek/reel/Df6HqDwBj8s/",
+    "isFeatured": true,
+    "handle": "@vandana_infratek",
+    "badge": "Turnkey Transformation",
+    "description": "Experience the live on-site progress, architectural finishes, and bespoke craftsmanship direct from our latest luxury residential handover."
+  },
+  {
+    "id": "reel-02",
+    "title": "Turnkey Villa Interior Handover",
+    "url": "https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj",
+    "isFeatured": false,
+    "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+    "views": "84.2K",
+    "likes": "5,420",
+    "comments": "230",
+    "caption": "Complete luxury turnkey interior handover — ambient cove lighting, marble flooring, and fluted panelling.",
+    "sound": "♫ Vandana Infratek • Original Audio"
+  },
+  {
+    "id": "reel-03",
+    "title": "Master Bedroom Suite Walkthrough",
+    "url": "https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj",
+    "isFeatured": false,
+    "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+    "views": "128K",
+    "likes": "9,820",
+    "comments": "512",
+    "caption": "Master bedroom suite walkthrough featuring bespoke charcoal fluted wall panelling and warm profile lighting.",
+    "sound": "♫ Trending Interior Beats • Audio"
+  },
+  {
+    "id": "reel-04",
+    "title": "Italian Marble Mirror Polishing",
+    "url": "https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj",
+    "isFeatured": false,
+    "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+    "views": "62.4K",
+    "likes": "4,190",
+    "comments": "184",
+    "caption": "Live footage: Final diamond polishing and seamless bookmatching of imported Statuario marble slabs.",
+    "sound": "♫ Infratek Craftsmanship Series"
+  },
+  {
+    "id": "reel-05",
+    "title": "Concealed Bar & Acoustic Paneling",
+    "url": "https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj",
+    "isFeatured": false,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "views": "95.1K",
+    "likes": "7,310",
+    "comments": "349",
+    "caption": "Custom motorized bar joinery disappearing flush into dark oak acoustic slats. Engineered precision.",
+    "sound": "♫ Architecture & Flow • Audio"
+  },
+  {
+    "id": "reel-06",
+    "title": "Duplex Penthouse Living Reveal",
+    "url": "https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj",
+    "isFeatured": false,
+    "image": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80",
+    "views": "142K",
+    "likes": "11.2K",
+    "comments": "640",
+    "caption": "Double-height living pavilion featuring suspended architectural chandelier and floor-to-ceiling glazing.",
+    "sound": "♫ Luxury Living Reveal"
+  },
+  {
+    "id": "reel-07",
+    "title": "Minimalist Gourmet Kitchen",
+    "url": "https://www.instagram.com/vandana_infratek?lqvp=dXA5bjVjNm51MHhj",
+    "isFeatured": false,
+    "image": "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80",
+    "views": "77.8K",
+    "likes": "6,150",
+    "comments": "290",
+    "caption": "Full concealed island with integrated induction, touch-release pocket doors, and textured quartzite.",
+    "sound": "♫ Vandana Kitchen Atelier"
+  }
+]
